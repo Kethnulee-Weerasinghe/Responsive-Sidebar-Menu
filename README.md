@@ -27,4 +27,3 @@ This project features a sidebar menu designed to adapt smoothly across all devic
 | CSS3         | Layout, responsive design, animations |
 | JavaScript   | Interactive toggle behavior         |
 
-ar-Menu
