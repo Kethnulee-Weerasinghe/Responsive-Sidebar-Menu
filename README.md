@@ -8,7 +8,7 @@ This project demonstrates a fully responsive sidebar menu that gracefully adapts
 
 ## Overview
 
-This project implements a **responsive sidebar menu** that toggles open/closed, works nicely on desktop and mobile, and highlights active menu items as you navigate through content sections. It’s suitable for dashboards, single‑page apps, blog layouts, or any interface needing compact side navigation.
+This project implements a responsive sidebar menu that toggles open/closed, works nicely on desktop and mobile, and highlights active menu items as you navigate through content sections. It’s suitable for dashboards, single‑page apps, blog layouts, or any interface needing compact side navigation.
 
 - Toggle button to expand / collapse sidebar  
 - Highlight active menu item   
