@@ -2,7 +2,7 @@
 
 This project demonstrates a fully responsive sidebar menu that gracefully adapts across different screen sizes. Built without external frameworks, it offers a clean, lightweight, and intuitive interface that enhances website navigation.
 
-**Live Website:** [https://kethnulee-weerasinghe.github.io/Responsive-Fried-Chicken-Website/](https://kethnulee-weerasinghe.github.io/Responsive-Fried-Chicken-Website/)
+**Live Website:** [https://kethnulee-weerasinghe.github.io/Responsive-Sidebar-Menu/](https://kethnulee-weerasinghe.github.io/Responsive-Sidebar-Menu/)
 
 ![Website Preview](./preview.png)
 
