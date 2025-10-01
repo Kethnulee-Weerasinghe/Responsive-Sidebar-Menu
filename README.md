@@ -8,14 +8,14 @@ This project demonstrates a fully responsive sidebar menu that gracefully adapts
 
 ## Overview
 
-This is a **responsive, static restaurant / menu website** that highlights fried chicken offerings. It includes sections like Home, About, Order, Combo, Contact, and a footer. Animations and scroll interactions are included for a dynamic user experience. The layout adjusts smoothly across desktop, tablet, and mobile screen sizes.  
+This project implements a **responsive sidebar menu** that toggles open/closed, works nicely on desktop and mobile, and highlights active menu items as you navigate through content sections. It’s suitable for dashboards, single‑page apps, blog layouts, or any interface needing compact side navigation.
 
-- Fully responsive layout across different devices  
-- Scroll-based animations 
-- “Active” navigation highlight as you scroll through sections  
-- Smooth transitions and visual polish  
-- Clean UI/UX suited to food / restaurant branding  
-
+- Toggle button to expand / collapse sidebar  
+- Highlight active menu item   
+- Smooth transitions & animations  
+- Responsive behavior: sidebar collapses or overlays on smaller screens  
+- Clean, modern UI design
+  
 ## Technologies
 
 - HTML
@@ -27,5 +27,5 @@ This is a **responsive, static restaurant / menu website** that highlights fried
 To view or edit the project locally:
 
 ```bash
-git clone https://github.com/Kethnulee-Weerasinghe/Responsive-Fried-Chicken-Website.git
-cd Responsive-Fried-Chicken-Website
+git clone https://github.com/Kethnulee-Weerasinghe/Responsive-Sidebar-Menu.git
+cd Responsive-Sidebar-Menu
