@@ -126,9 +126,10 @@ img {
 }
 
 /*=============== SIDEBAR ===============*/
+/* Updated left to negative pixels instead of -100% */
 .sidebar {
   position: fixed;
-  left: -100%;
+  left: -350px; /* Hide sidebar fully */
   top: var(--header-height);
   width: 350px !important; /* Increased width */
   height: 100%;
@@ -314,7 +315,13 @@ img {
 @media screen and (max-width: 300px) {
   .sidebar {
     width: 232px !important;
+    left: -232px; /* Adjust hide position */
     padding-inline: 1rem;
+  }
+
+  .show-sidebar {
+    left: 0 !important;
+    width: 232px !important;
   }
 
   .sidebar__account {
@@ -413,6 +420,15 @@ img {
 /* Reduce sidebar */
 .show-sidebar {
   width: 120px !important;
+}
+
+.sidebar.reduce {
+  left: 0; /* Sidebar reduced is still visible */
+  width: 120px !important;
+}
+
+.sidebar.close-reduce {
+  left: -120px !important; /* Fully hide reduced sidebar */
 }
 
 .show-sidebar .sidebar__logo {
