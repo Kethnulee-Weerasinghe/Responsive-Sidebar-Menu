@@ -130,7 +130,7 @@ img {
   position: fixed;
   left: -100%;
   top: var(--header-height);
-  width: 280px;
+  width: 350px; /* increased width */
   height: 100%;
   padding: 2rem 1.5rem;
   background-color: var(--dark-color-light);
@@ -313,18 +313,18 @@ img {
 @media screen and (max-width: 300px) {
   .sidebar{
     width: 232px;
-  padding-inline: 1rem;  
-}
+    padding-inline: 1rem;  
+  }
 
-.sidebar__account {
-  flex-direction: column;
-  row-gap: .5rem;
-  text-align: center;
-}
+  .sidebar__account {
+    flex-direction: column;
+    row-gap: .5rem;
+    text-align: center;
+  }
 
-.sidebar__account i {
-  margin: 0;
-}
+  .sidebar__account i {
+    margin: 0;
+  }
 }
 
 /* For large devices */
@@ -334,7 +334,7 @@ img {
   .sidebar {
     left: 0;
     top: calc(var(--header-height) + 1.5rem);
-    width: 300px;
+    width: 350px; /* increased width */
     transition: width .4s;
   }
 
@@ -403,7 +403,7 @@ img {
   }
 
   .main {
-    padding-left: 300px;
+    padding-left: 350px; /* adjusted main padding */
     padding-top: 6rem;
     transition: padding .4s;
   }
@@ -438,7 +438,7 @@ img {
 }
 
 .show-sidebar .main {
-  padding-left: 300px;
+  padding-left: 350px; /* match sidebar width */
 }
 
 /* Add padding main */
