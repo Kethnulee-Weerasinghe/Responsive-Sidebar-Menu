@@ -1,5 +1,6 @@
 # Responsive Sidebar Menu
 
+A frontend-only, fully responsive sidebar navigation menu built with HTML, CSS, and JavaScript. It features smooth slide-in animations, toggle functionality, and adaptive design for all screen sizes. This project showcases core frontend skills in building clean, interactive, and user-friendly UI components.
 
 **Live Website:** [https://kethnulee-weerasinghe.github.io/Responsive-Sidebar-Menu/](https://kethnulee-weerasinghe.github.io/Responsive-Sidebar-Menu/)
 
