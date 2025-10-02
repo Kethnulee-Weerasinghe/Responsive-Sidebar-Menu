@@ -126,10 +126,9 @@ img {
 }
 
 /*=============== SIDEBAR ===============*/
-/* Updated left to negative pixels instead of -100% */
 .sidebar {
   position: fixed;
-  left: -350px; /* Hide sidebar fully */
+  left: 0;
   top: var(--header-height);
   width: 350px !important; /* Increased width */
   height: 100%;
@@ -138,7 +137,8 @@ img {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   z-index: var(--z-fixed);
-  transition: left .4s, width .4s;
+  transition: transform 0.4s ease;
+  transform: translateX(-100%); /* Hide sidebar by default */
 }
 
 .sidebar::after {
@@ -196,7 +196,7 @@ img {
 .sidebar__list {
   display: flex;
   flex-direction: column;
-  row-gap: .25;
+  row-gap: .25rem;
 }
 
 .sidebar__link-floating {
@@ -216,7 +216,7 @@ img {
 
 .sidebar__link i {
   color: var(--white-color);
-  font: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .sidebar__link-name {
@@ -295,8 +295,7 @@ img {
 
 /* Show sidebar */
 .show-sidebar {
-  left: 0 !important;
-  width: 350px !important; /* Match increased width */
+  transform: translateX(0); /* Slide sidebar in */
 }
 
 /* Active link */
@@ -315,13 +314,12 @@ img {
 @media screen and (max-width: 300px) {
   .sidebar {
     width: 232px !important;
-    left: -232px; /* Adjust hide position */
+    transform: translateX(-100%);
     padding-inline: 1rem;
   }
 
   .show-sidebar {
-    left: 0 !important;
-    width: 232px !important;
+    transform: translateX(0);
   }
 
   .sidebar__account {
@@ -340,7 +338,8 @@ img {
   .header__container {}
 
   .sidebar {
-    left: 0 !important;
+    /* Sidebar visible by default on desktop */
+    transform: translateX(0);
     top: calc(var(--header-height) + 1.5rem);
     width: 350px !important; /* Increased width */
     transition: width .4s;
@@ -420,15 +419,6 @@ img {
 /* Reduce sidebar */
 .show-sidebar {
   width: 120px !important;
-}
-
-.sidebar.reduce {
-  left: 0; /* Sidebar reduced is still visible */
-  width: 120px !important;
-}
-
-.sidebar.close-reduce {
-  left: -120px !important; /* Fully hide reduced sidebar */
 }
 
 .show-sidebar .sidebar__logo {
