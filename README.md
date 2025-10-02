@@ -18,6 +18,7 @@ A frontend-only, fully responsive sidebar navigation menu built with HTML, CSS, 
 
 - HTML
 - CSS
+- SCSS
 - JavaScript
 
 ## Running Locally
