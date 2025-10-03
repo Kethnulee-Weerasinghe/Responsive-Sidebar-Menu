@@ -6,22 +6,14 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --white-color: hsl(210, 32%, 99%);
   --text-color: hsl(210, 4%, 55%);
   --dark-color-light: hsla(210, 4%, 4%, .1);
   --white-color-light: hsla(210, 4%, 99%, .1);
-  --gradient-x: linear-gradient(90deg,
-              hsla(0, 0%, 0%, 0),
-              hsl(210, 4%, 64%),
-              hsla(0, 0%, 0%, 0));
-  --gradient-y: linear-gradient(0,
-              hsla(0, 0%, 0%, 0),
-              hsl(210, 4%, 64%),
-              hsla(0, 0%, 0%, 0));
+  --gradient-x: linear-gradient(90deg, hsla(0, 0%, 0%, 0), hsl(210, 4%, 64%), hsla(0, 0%, 0%, 0));
+  --gradient-y: linear-gradient(0, hsla(0, 0%, 0%, 0), hsl(210, 4%, 64%), hsla(0, 0%, 0%, 0));
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
@@ -35,7 +27,6 @@
   --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
 @media screen and (min-width: 1024px) {
   :root {
     --normal-font-size: 1rem;
@@ -130,7 +121,7 @@ img {
   position: fixed;
   left: 0;
   top: var(--header-height);
-  width: 350px !important; /* Increased width */
+  width: 350px !important;
   height: 100%;
   padding: 2rem 1.5rem;
   background-color: var(--dark-color-light);
@@ -138,7 +129,7 @@ img {
   -webkit-backdrop-filter: blur(16px);
   z-index: var(--z-fixed);
   transition: transform 0.4s ease;
-  transform: translateX(-100%); /* Hide sidebar by default */
+  transform: translateX(-100%);
 }
 
 .sidebar::after {
@@ -165,12 +156,14 @@ img {
   column-gap: .5rem;
 }
 
+/* 👇 UPDATED LOGO IMAGE SIZE */
 .sidebar__logo-img {
-  width: 37px;
+  width: 30px;
 }
 
+/* 👇 UPDATED LOGO TEXT SIZE */
 .sidebar__logo-text {
-  width: 76px;
+  width: 60px;
 }
 
 .sidebar__content {
@@ -250,16 +243,12 @@ img {
 }
 
 .sidebar__title span::before {
-  background: linear-gradient(90deg,
-                hsla(0, 0%, 0%, 0),
-                hsla(210, 4%, 64%));
+  background: linear-gradient(90deg, hsla(0, 0%, 0%, 0), hsla(210, 4%, 64%));
   left: 0;
 }
 
 .sidebar__title span::after {
-  background: linear-gradient(90deg,
-                hsla(210, 4%, 64%),
-                hsla(0, 0%, 0%, 0));
+  background: linear-gradient(90deg, hsla(210, 4%, 64%), hsla(0, 0%, 0%, 0));
   right: 0;
 }
 
@@ -295,7 +284,7 @@ img {
 
 /* Show sidebar */
 .show-sidebar {
-  transform: translateX(0); /* Slide sidebar in */
+  transform: translateX(0);
 }
 
 /* Active link */
@@ -310,7 +299,6 @@ img {
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (max-width: 300px) {
   .sidebar {
     width: 232px !important;
@@ -333,15 +321,13 @@ img {
   }
 }
 
-/* For large devices */
 @media screen and (min-width: 1024px) {
   .header__container {}
 
   .sidebar {
-    /* Sidebar visible by default on desktop */
     transform: translateX(0);
     top: calc(var(--header-height) + 1.5rem);
-    width: 350px !important; /* Increased width */
+    width: 350px !important;
     transition: width .4s;
   }
 
@@ -410,7 +396,7 @@ img {
   }
 
   .main {
-    padding-left: 350px !important; /* Adjusted padding-left */
+    padding-left: 350px !important;
     padding-top: 6rem;
     transition: padding .4s;
   }
