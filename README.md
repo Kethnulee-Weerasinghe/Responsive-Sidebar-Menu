@@ -8,12 +8,14 @@ A frontend-only, fully responsive sidebar navigation menu built with HTML, CSS, 
 
 ## Overview
 
-- Toggle button to expand / collapse sidebar  
-- Highlight active menu item   
-- Smooth transitions & animations  
-- Responsive behavior: sidebar collapses or overlays on smaller screens  
+A responsive sidebar navigation menu demo, with a collapsible side menu and a main content area.
+
 - Clean, modern UI design
-  
+- Highlight active menu item
+- Smooth transitions & animations  
+- Toggle button to expand / collapse sidebar
+- Responsive design (desktop / tablet / mobile)
+
 ## Technologies
 
 - HTML
@@ -28,3 +30,4 @@ To view or edit the project locally:
 ```bash
 git clone https://github.com/Kethnulee-Weerasinghe/Responsive-Sidebar-Menu.git
 cd Responsive-Sidebar-Menu
+```
